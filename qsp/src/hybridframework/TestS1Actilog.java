@@ -15,11 +15,11 @@ public class TestS1Actilog extends BaseTest {
 		String urlval = ff.readProperty(Prop_Path,"url");
 		driver.get(urlval);
 		Thread.sleep(3000);
-		String user = ff.readProperty(Prop_Path,"un");
-		String pass = ff.readProperty(Prop_Path,"psw");
+		String user1 = ff.readProperty(Prop_Path,"un");
+		String pass1 = ff.readProperty(Prop_Path,"psw");
 		
 		 ActitimeLoginP lp = new ActitimeLoginP(driver);
-		 lp.loginProcess(user, pass);
+		 lp.loginProcess(user1, pass1);
 		
 		
 		
