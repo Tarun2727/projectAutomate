@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="AllTheTestCases">
+  <include name="Smo"></include>
+  <include name="Int"></include>
+  <include name="Fun"></include>
+  </define>
+  
+  <run>
+  <include name="AllTheTestCases"></include>
+  <exclude name="Fun"></exclude>
+  </run>
+  </groups>
+  
+  
+    <classes>
+      <class name="testngpack.GropingTestCases"/>
+      <class name="testngpack.GroupingTC"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
