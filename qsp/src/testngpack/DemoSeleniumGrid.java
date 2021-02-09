@@ -28,7 +28,7 @@ public class DemoSeleniumGrid {
 	
 	driver=new RemoteWebDriver(new URL(nodeURL), capability);
 
-	}
+	} 
 	
 	
 	
